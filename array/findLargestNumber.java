@@ -23,3 +23,5 @@ public class findLargestNumber {
         System.out.println(getlargest(number));
     }
 }
+
+// time complexity here O(n)
