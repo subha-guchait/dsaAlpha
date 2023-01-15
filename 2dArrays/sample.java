@@ -29,7 +29,7 @@ public class sample {
             for (int j = 0; j < matrix[0].length; j++) {
                 System.out.print(matrix[i][j] + " ");
             }
-            System.out.println();1
+            System.out.println();
         }
         search(matrix, 7);
     }

@@ -16,14 +16,14 @@ public class spiralMatrix {
             }
             // bottom
             for (int j = endCol - 1; j >= startCol; j--) {
-                if (startRow == endRow) {
+                if (startRow == endRow) { // it is done for if only single cell left
                     break;
                 }
                 System.out.print(matrix[endRow][j] + " ");
             }
             // left
             for (int i = endRow - 1; i >= startRow; i--) {
-                if (startCol == endCol) {
+                if (startCol == endCol) { // it is done for if only single cell left
                     break;
                 }
                 System.out.print(matrix[i][startCol] + " ");
