@@ -1,5 +1,7 @@
 import java.util.*;
 
+// Anagram: when teo string contains same charecter but in diffrent order. ex: race and care
+
 public class anagrams {
     public static boolean chkAnagrams(String str1, String str2) {
         str1 = str1.toLowerCase();
