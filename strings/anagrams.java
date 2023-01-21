@@ -26,5 +26,7 @@ public class anagrams {
         System.out.println(chkAnagrams("amit", "imta"));
         System.out.println(chkAnagrams("amita", "imta"));
         System.out.println(chkAnagrams("amit", "mang"));
+        System.out.println(chkAnagrams("amit", "tima"));
+        
     }
 }
