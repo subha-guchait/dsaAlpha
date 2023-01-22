@@ -1,6 +1,6 @@
 import java.util.*;
 
-// Anagram: when teo string contains same charecter but in diffrent order. ex: race and care
+// Anagram: when teo string contains same charecter but in diffrent order. Ex: race and care
 
 public class anagrams {
     public static boolean chkAnagrams(String str1, String str2) {
