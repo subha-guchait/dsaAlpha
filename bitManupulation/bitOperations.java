@@ -35,11 +35,19 @@ public class bitOperations {
         return n & bitMask;
     }
 
+    public static int clearBitsRange(int n, int i, int j) {
+        int a = ((~0) << (j + 1));
+        int b = (1 << i) - 1;
+        int bitMask = a | b;
+        return n & bitMask;
+    }
+
     public static void main(String[] args) {
         System.out.println(getIthBit(10, 2));
         System.out.println(setIthBit(10, 2));
         System.out.println(clearIthBit(10, 1));
         System.out.println(updateIthBit(10, 2, 1));
         System.out.println(clearIBits(15, 2));
+        System.out.println(clearBitsRange(10, 2, 4));
     }
 }
