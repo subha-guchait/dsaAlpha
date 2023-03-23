@@ -6,8 +6,7 @@ public class binarySearch {
             int mid = (start + end) / 2;
             if (numbers[mid] == key) {
                 return mid;
-            }
-            if (numbers[mid] <= key) {
+            } else if (numbers[mid] <= key) {
                 start = mid + 1;
             } else {
                 end = mid - 1;
