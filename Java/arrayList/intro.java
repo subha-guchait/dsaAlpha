@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class intro {
 
@@ -61,6 +62,13 @@ public class intro {
         // swap index 1 and index 3
         System.out.println(list);
         swap(list, 1, 3);
+        System.out.println(list);
+
+        System.out.println(list);
+        // sorting
+        Collections.sort(list);// ascending order
+        System.out.println(list);
+        Collections.sort(list, Collections.reverseOrder());// descending order
         System.out.println(list);
 
     }
