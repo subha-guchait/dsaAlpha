@@ -6,7 +6,7 @@ public class subArray {
                 int ts = 0; // total sub array
                 for (int i = 0; i < numbers.length; i++) {
                         // start = i
-                        for (int j = i; j < numbers.length; j++) {
+                        for (int j = i + 1; j < numbers.length; j++) {
                                 // end = i
                                 for (int k = i; k <= j; k++) {
                                         // for print

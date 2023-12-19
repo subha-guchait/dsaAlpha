@@ -1,13 +1,12 @@
 public class maxSubArraysumKadan {
     public static void maxSum(int numbers[]) {
         int ms = Integer.MIN_VALUE; // maximum sum
-        int cs = 0; // current sum
+        int cs = numbers[0]; // current sum
 
         for (int i = 0; i < numbers.length; i++) {
             cs = cs + numbers[i];
-            if (cs < 0) { // it will only work for positive array but for negative array. if(cs <
-                          // numbers[i])
-                cs = 0; // cs = nums[i]
+            if (cs < numbers[i]) {
+                cs = numbers[i];
             }
             ms = Math.max(cs, ms);
         }
@@ -19,5 +18,7 @@ public class maxSubArraysumKadan {
         maxSum(numbers);
         int numbers1[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
         maxSum(numbers1);
+        int numbers2[] = { -1, -2, -3, -4, -5, -6 };
+        maxSum(numbers2);
     }
 }
