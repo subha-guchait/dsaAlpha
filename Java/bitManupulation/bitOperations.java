@@ -8,6 +8,15 @@ public class bitOperations {
         }
     }
 
+    public static int getIthBit1(int n, int i) {
+        int bitMask = 1;
+        if (((n >> i) & bitMask) == 0) {
+            return 0;
+        } else {
+            return 1;
+        }
+    }
+
     public static int setIthBit(int n, int i) {
         int bitMask = 1 << i;
         return n | bitMask;

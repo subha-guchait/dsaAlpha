@@ -13,4 +13,18 @@ public class selectionSort {
             arr[i] = temp;
         }
     }
+
+    public static void printArr(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        int[] arr1 = { 5, 4, 1, 3, 2 };
+        sorting(arr1);
+        printArr(arr1);
+
+    }
 }
