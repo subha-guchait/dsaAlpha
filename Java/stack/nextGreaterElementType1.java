@@ -28,8 +28,8 @@ public class nextGreaterElementType1 {
     // optimal approach : using stack
 
     // we will take a stack and nge array to store next greater element
-    // here we will traving array form right to left
-    // next inside this loop we will reun an while loop.
+    // here we will travasing array form right to left
+    // next inside this loop we will run an while loop.
     // while loop will pop our stack. it will run if our stack is not empty and
     // current element is greater than peek of stack
     // then we check if stack is empty that means no greater elemnt found we will
